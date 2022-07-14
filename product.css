@@ -1,0 +1,231 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.disclosure-container {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.disclosure {
+    padding-top: 1rem;
+    line-height: 2rem;
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    max-width: 100%;
+    overflow-x: hidden !important;
+}
+
+#header-img {
+    width: 180px;
+}
+
+@media (max-width: 650px) {
+  #header-img { display: none;
+}
+.logo {
+    padding: 4rem 1rem 0 0;
+}
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(173, 229, 247, 0.8);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1;
+}
+@media (max-width: 928px) {
+    header {
+        height: 210px;
+    }
+    ul {
+        flex-flow: column wrap;
+    }
+    .n1 {
+        position: relative;
+        bottom: 2rem;
+    }
+   .n2 {
+    position: relative;
+    bottom: 4rem;
+} 
+.n3 {
+    position: relative;
+    bottom: 6rem;
+}
+}
+@media (max-width: 380px) {
+    ul {
+        position: relative;
+        left: 4rem;
+        top: 0.5rem;
+    }
+}
+
+ul {
+    display: flex;
+    flex-grow: 1;
+    margin-right: 2rem;    
+}
+
+.logo {
+    margin-left: 1rem;
+}
+.logo:hover {
+    animation: rotation 0.8s alternate infinite forwards;
+    cursor: pointer;
+    text-shadow: 3px 3px orangered;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(45deg);
+    }
+}
+
+li {
+    list-style: none;
+    margin-top: 1rem;
+    padding: 2rem;
+    margin-right: 4rem;
+
+}
+li > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+li > a:hover {
+    text-shadow: 3px 3px orangered;
+    }
+
+    /*About Section*/
+    .about-title {
+        position: absolute;
+        top: 230px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    #about-section {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 40%;
+    margin-bottom: 3%;
+    margin-top: 7rem;
+    box-shadow: 0 0 20px gray;
+}
+
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+/*About Section Ends*/
+
+/*Gallery Section*/
+.gallery-title {
+    position: relative;
+        top: 0px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        
+}
+
+#gallery-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    overflow: hidden;
+}
+.gallery-div {
+    width: 200px;
+}
+.gallery-img {
+    width: 100%;
+    box-shadow: 10px 10px 10px gray;
+}
+/*Gallery Section Ends*/
+
+/*Contact Us Footer*/
+
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 3rem;
+    margin-left: 1rem;
+}
+span {
+    font-size: 40px;
+  background: -webkit-linear-gradient(40deg, red, orange, yellow, green, blue, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+form > h2 {
+    text-align: center;
+    width: 100%;
+    padding: 2rem;
+}
+input {
+    border-radius: 40px;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 10px auto;  
+    border: 3px solid lightcyan;
+    font-weight: bold;
+
+}
+input#email {
+    background: -webkit-linear-gradient(30deg, red, orange, yellow, green, blue, violet);
+    background: -moz-linear-gradient(40deg, red, orange, yellow, green, blue, violet);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+
+}
+
+input#submit:hover {
+    background: -webkit-linear-gradient(23deg, red, orange, yellow, green, blue, violet);
+    background: -moz-linear-gradient(40deg, red, orange, yellow, green, blue, violet);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0 0 5px lightcyan;
+    text-shadow: -3px -3px black;
+}
+
+/*Contact Us Footer Ends*/

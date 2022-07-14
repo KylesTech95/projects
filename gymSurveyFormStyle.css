@@ -1,0 +1,30 @@
+html {
+    margin: 0 auto;
+    width: 1000px;
+    background-image: linear-gradient(45deg, red, orange, yellow, green, blue, violet);
+}
+header {
+    text-align: center;
+}
+form {
+text-align: center; 
+}
+fieldset {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+input {
+    margin: 8px;
+}
+label {
+    font-size: 18px;
+}
+
+#name, #email, #age, #date {
+    width: 200px;
+}
+#staff, #clean, #equipment {
+    margin: 8px;
+    
+}

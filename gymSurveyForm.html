@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="gymSurveyFormStyle.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <header>
+<h1 id="title">Gym Survey Form</h1>
+<p id="decsription"><em>Thank you for helping us improve our business!</em></p>
+</header>
+</head>
+
+<body>
+    <form class="form" action="gymSurveyResults.html" method="get">
+      <fieldset>
+        <legend>Thank you again!</legend>
+      <div>
+      <label for="name" id="name">Name</label>
+      <br>
+        <input type="name" id="name" name="name" required placeholder="Enter you name">
+      </div>
+      <div>
+        <label for="email" id="email">Email</label>
+        <br>
+
+          <input type="email" id="email" name="name" required placeholder="Enter you email">
+      </div>
+      
+          <div>
+            <label for="age" id="age">age</label>
+            <br>
+              <input type="number" id="age" name="name" min="1" max="">
+            </div>
+            <div>
+              <label for="date" id="date">Birth date</label>
+              <br>
+                <input type="date" id="date" name="date" required>
+              </div>
+<div>
+              <label for="male" id="male">Male</label>
+              <br>
+
+                <input type="radio" id="male" name="gender" value="male">
+              </div>
+              <div>
+                <label for="female"id="female">Female</label>
+                <br>
+
+                  <input type="radio" id="female" name="gender" value="female">
+                </div>
+                <div>
+                  <label for="nonBinary" id="nonBinary">Non-Binary</label>
+                  <br>
+
+                    <input type="radio" id="nonBinary" name="gender" value="nonBinary">
+                  </div>
+                  <div>
+                    <label for="eyeColor" id="eyeColor">EyeColor</label>
+                    
+                    <select name="eyeColor" id="eyeColor">
+                      <option value=""></option>
+                      <option value="green">Green</option>
+                      <option value="red">Red</option>
+                      <option value="blue">Blue</option>
+                      <option value="gray">Gray</option>
+                      <option value="brown">Brown</option>
+                    </select>
+                    
+                    <input type="color" id="color" name="color" value="color">
+                    </div>
+                  <hr>
+                  <h3>Customer Satisfaction</h3>
+                  <p><em>Please rate satisfaction ranging from <b>1=lowest satisfaction</b> to <b>5=highest satisfaction</b></em></p>
+          
+                  <label for="staff" id="staff">Staff & Trainers</label>
+                  <select name="staff" id="staff">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
+                  <br>
+
+                <label for="clean" id="clean">Gym Cleanliness</label>
+                <select name="clean" id="clean">
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                <br>
+
+          <label for="equipment" id="equipment">Gym equipment</label>
+                <select name="equipment" id="equipment">
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+                  <hr>
+<h3>Favorite Fruit(s)</h3>                
+                 <div>
+                <label for="apple">Apple</label>
+                
+                <input type="checkbox" name="fruit" id="apple" value="apple">
+              </div>
+              <div>
+                <label for="banana">Banana</label>
+                
+                <input type="checkbox" name="fruit" id="apple" value="banana">
+              </div>
+              <label for="orange">Orange</label>
+                
+                <input type="checkbox" name="fruit" id="orange" value="orange">
+              </div>
+              <hr>
+              <h3>Your opinion MATTERS and would be GREATLY appreciated!</h3>
+                <textarea name="Comments" id="Comments" placeholder="Optional"></textarea>
+                <br>
+          <button type="submit" id="submit">Submit</button>
+          <button type="reset" id="reset">Reset</button>
+        </div>
+      </fieldset>
+    </form> 
+</body>
+</html>

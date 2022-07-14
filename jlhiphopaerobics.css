@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background:rgba(168, 144, 144, 0.6);
+    overflow-x: hidden;
+}
+
+
+
+/*Nav header starts*/
+nav {
+    background: rgba(112, 84, 84, 0.9);
+    height: 80px;
+    width: 100%;
+}
+
+#logo-img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 50px;
+    margin-right: 2rem;
+}
+@media (max-width: 1000px) {
+    #logo-img {
+        position: absolute;
+    }
+    label.logo {
+        position: relative;
+        left: 60px;
+    }
+    header {
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    };
+}
+@media (max-width: 510px) {
+    #logo-img {
+        display: none;
+    }
+    label.logo {
+        position: absolute;
+        left: -10px;
+    }
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-family: 'Bangers', cursive;
+    font-size: 45px;
+    text-shadow: 2px 2px black;
+}
+label.logo:hover  {
+    position: absolute;
+    background: linear-gradient(120deg, red 20%, orange, yellow, green, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    font-size: 50px;
+    font-family: 'Bangers', cursive;
+
+}
+nav ul {
+    float: right;
+    margin: 20px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 20px 1rem;
+    border-radius: 3px;
+}
+a.active, a:hover {
+    background: rgba(208, 165, 218, 0.20);
+    transition: .5s;
+}
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 60px;
+    cursor: pointer;
+    margin-right: 40px;
+    display: none
+}
+
+#check {
+    display: none;
+}
+@media (max-width:954px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(177, 159, 159, 0.9);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        padding-top: 10rem;
+        z-index: 999;
+        transition: all .5s;
+        cursor: pointer;
+    }
+   #check:checked ~ ul{
+        left: 0;
+        z-index: 999;
+    }
+    
+   nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+   }
+   nav ul li a {
+    font-size: 27px;
+   }
+
+   a:hover, a.active {
+    background: none;
+    color: rgb(211, 25, 65)
+   }
+ 
+
+
+   }
+   @media (max-width: 510px) {
+
+    label.logo {
+        font-size: 30px;
+        padding: 0;
+        margin: 0 1rem;
+    }
+    label.logo:hover {
+        font-size: 33px;
+        padding-right: 1rem;
+        font-size: 50px;
+    }
+    nav ul li {
+        padding: 1rem;
+         
+    }
+   }
+
+/*Nav header ends*/
+
+
+
+
+/*Section about starts*/
+#about {
+    width: 100%;
+}
+.subheader {
+    text-align: center;
+    padding-top: 3rem;
+    background: linear-gradient(40deg,  purple, orange, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 1s ease-in-out;
+    font-family: 'Bangers', cursive;
+    font-size: 40px;
+}
+
+span {
+    margin: 11px;
+    padding: 10px;
+}
+.span3 {
+    background: green;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 5px 5px 10px lime;
+    font-size: 60px;
+
+}
+.span2 {
+    background: red;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 5px 5px 10px orangered;
+    font-size: 60px;
+
+}
+@media (max-width: 858px) {
+    h2 {
+        margin: 0 4rem; 
+        line-height: 40px;
+    }
+}
+
+.sign-up-title {
+    text-align: center;
+    background: linear-gradient(12deg, blue 13%, purple 16%, pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 1s ease-in-out;
+    font-family: 'Bangers', cursive;
+    font-size:30px;
+}
+.sign-up-btn {
+    font-size: 80px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+}
+button {
+    margin: 1rem auto;
+    background: transparent;
+    border: none;
+    font-size: 60px;
+}
+.fa-power-off {
+    padding: 0 4rem;
+    background: linear-gradient(120deg, black 20%, silver, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fa-power-off:hover {
+    background: linear-gradient(35deg, aqua 19%, green, aqua);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+div.video-div {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 40%;
+    margin-bottom: 3%;
+    margin-top: 2rem;
+    box-shadow: 0 0 20px gray;
+}
+
+#video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Section about ends*/
+
+
+/*Section proof starts*/
+#proof {
+    position: relative;
+    text-align: center;
+}
+.proof-title {
+    text-align: center;
+    background: linear-gradient(130deg, red 15%, gold 5%, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 1s ease-in-out;
+    font-family: 'Bangers', cursive;
+    font-size:40px;
+}
+.proof-subtitle {
+    text-align: center;
+    background: linear-gradient(45deg, gray , black, silver);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 1s ease-in-out;
+    font-family: 'Bangers', cursive;
+    font-size:30px;
+    padding-top: 2.5rem;
+    width: 100%;
+}
+@media (max-width: 1145px) {
+    .proof-subtitle {
+        font-size: 20px;
+    }
+}
+@media (max-width: 858px) {
+    .proof-subtitle {
+        font-size: 14px;
+    }
+}
+.span4 {
+    background: blue;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 5px 5px 10px violet;
+    font-size: 60px;
+    margin-top: 1rem;
+}
+.proof-container {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3rem;
+
+}
+div.proof-card {
+width: 450px;
+height: 470px;
+box-shadow: 0 0 25px brown;
+border-width:1rem;
+display: flex;
+justify-content: space-between;
+background: black;
+overflow: hidden;
+
+}
+#proof-img {
+    margin: 0;
+    height: 30vh;
+}
+
+
+.img4 {
+    position: relative;
+    right: 140px
+}
+
+div.proof-card>p {
+    color: white;
+    font-size: 20px;
+    width: 500px;
+}
+
+/*Section proof ends*/
+
+/*Section signUp starts*/
+#sign-up {
+    width: 100%;
+    margin: 4rem;
+    padding: 0;
+    text-align: center;
+    
+}
+
+.span5 {
+    background: orange;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 3px 3px 10px red;
+    font-size: 60px;
+}
+
+#form {
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    margin: 5rem 0 2rem 0;
+    align-content: center;
+    gap: 2rem;
+}
+
+input {
+    border: 2px solid rgba(82, 39, 71, 0.3);
+    border-radius: 20px;
+    border-width: 4px;
+    height: 30px;
+    width: 200px;
+    padding: 2rem 2rem;
+    text-transform: uppercase;
+    margin-left: 1rem;
+    background: linear-gradient(45deg, blue, green, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
+}
+input:hover {
+    background: linear-gradient(45deg, red 13%, black 5%, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 0px 0px 10px brown
+}
+.calendar {
+    position: relative;
+    
+}
+.contact {
+    position: relative;
+    
+}
+.fa-calendar-days {
+    font-size: 32px;
+}
+.fa-list {
+    font-size: 32px;
+
+}
+/*Section signUp ends*/
